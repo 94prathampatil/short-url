@@ -15,7 +15,7 @@ import user_route from "./src/routes/user.route.js"
 const app = express()
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://short-url-m43o.onrender.com", "https://short-url-m43o.onrender.com"],
     credentials: true,
 }))
 app.use(express.json())
